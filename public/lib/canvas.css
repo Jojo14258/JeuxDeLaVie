@@ -1,0 +1,31 @@
+canvas {
+  height: min-content;
+  background-color: white;
+  border-radius: 12px 12px 0 0;
+  margin: 5px 5px -4px 5px;
+}
+
+.canvas-button-bar {
+  height: 40px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.canvas-button-bar button {
+  color: var(--primary-font-color);
+  font-size: 20px;
+  background-color: var(--primary-color);
+  flex-grow: 1;
+  text-align: center;
+  transition: 0.2s ease-out;
+}
+
+.canvas-button-bar button:hover {
+  background-color: var(--secondary-color);
+  transition: 0.2s ease-in;
+}
+
+.canvas-button-bar button:active {
+  transition: 20ms;
+  padding-top: 5px;
+}

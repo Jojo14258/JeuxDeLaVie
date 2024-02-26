@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>TUMO's Game of Life</title>
+    <meta charset="utf-8" />
+
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="https://unpkg.com/destyle.css@4.0.0/destyle.min.css"
+    />
+    <link rel="stylesheet" type="text/css" href="lib/style.css" />
+    <script src="lib/init.js"></script>
+  </head>
+  <body>
+    <header>
+      <img src="lib/images/logo_tumo.png" />
+      <h1>Game of Life<br> &nbsp; by Jordan &nbsp;<br/></h1>
+      <img src="lib/images/logo_campus.png" />
+    </header>
+    <main class="body-content">
+      <div class="body-left">
+        <ul class="cell-list">
+        </ul>
+      </div>
+      <div class="body-right">
+        <canvas width="800px" height="800px"></canvas>
+        <div class="canvas-button-bar">
+          <button id="pause-button" class="canvas-button">⏸️ Pause</button>
+          <button id="next-button" class="canvas-button">⏭️ Next step</button>
+          <button id="faster-button" class="canvas-button">⌛ Faster</button>
+          <button id="slower-button" class="canvas-button">🐌 Slower</button>
+        </div>
+      </div>
+    </main>
+    <script src="socket.io/socket.io.js"></script>
+    <script type="module" src="index.js"></script>
+  </body>
+</html>
